@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/5047b51bed.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
     <title>Landing Inmobiliaria</title>
   </head>
   <body>
@@ -16,41 +17,36 @@
       <div class="container__header">
         <div class="logo">
           <a href="#">
-            <img src="assets/images/Logo/logo-magtimus.png" alt="" />
+            <img src="assets/logoLite.png" alt="Logo" />
           </a>
         </div>
-        <div class="menu">
+
+        <!-- Botón de menú hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <div class="menu" id="menu">
+          <!-- Botón de cerrar menú -->
+          <div class="close-menu" id="close-menu">✖</div>
+
           <nav>
             <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Nosotros</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Obras</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><a href="#incio">Inicio</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#contacto">Contacto</a></li>
             </ul>
           </nav>
-
-          <a href="#" class="btn__quote">Cotizar</a>
-
           <div class="socialMedia">
-            <a href="#">
-              <img
+            <a href="https://www.facebook.com/Torresguerreroinmo?locale=es_LA"
+              ><img
                 src="assets/images/social media/facebook.png"
                 alt="Facebook"
-              />
-            </a>
-            <a href="#">
-              <img
+            /></a>
+            <a href="https://www.instagram.com/torresguerreroinmo/"
+              ><img
                 src="assets/images/social media/instagram.png"
                 alt="Instagram"
-              />
-            </a>
-            <a href="#">
-              <img src="assets/images/social media/twitter.png" alt="Twitter" />
-            </a>
-            <a href="#">
-              <img src="assets/images/social media/youtube.png" alt="YouTube" />
-            </a>
+            /></a>
           </div>
         </div>
       </div>
@@ -59,63 +55,60 @@
     <main>
       <!-- INICIO -->
       <!-- Portada de inicio -->
-      <div class="container__cover div__offset">
+      <div class="container__cover div__offset" id="incio">
         <div class="cover">
           <section class="text__cover">
-            <h1>Trabaje inteligentemente con infinitas posibilidades</h1>
+            <h1>Inmobiliaria Torres Guerrero</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              soluta mollitia deserunt itaque aspernatur ullam laudantium
-              dolores nihil illo, minima consequuntur iusto dicta quo expedita
-              inventore distinctio, natus exercitationem eligendi.
+              En Inmobiliaria Torres Guerrero, nos comprometemos a hacer
+              realidad tus sueños de hogar. Con años de experiencia y un equipo
+              profesional, te ofrecemos soluciones inmobiliarias con
+              transparencia, seguridad y confianza.
             </p>
-            <a href="#" class="btn__text-cover btn__text">Empezar</a>
           </section>
           <section class="image__cover">
-            <img src="assets/images/Cover/hero-img.png" alt="CoverImage" />
+            <img src="assets/bannerTrasparent.png" alt="CoverImage" />
           </section>
         </div>
       </div>
 
       <!-- Generado de confianza -->
-      <div class="container__trust container__card-primary">
+      <!-- Misión, Visión y Valores -->
+      <div class="container__trust container__card-primary" id="nosotros">
         <div class="trust card__primary">
           <div class="text__trust text__card-primary">
-            <p>GENERA CONFIANZA PRIMERO</p>
-            <h1>Controla tu negocio con un solo toque.</h1>
+            <p>NUESTRO COMPROMISO</p>
+            <h1>Misión, Visión y Valores</h1>
           </div>
           <div class="container__trust container__box-cardPrimary">
+            <!-- Misión -->
             <div class="card__trust box__card-primary">
-              <img
-                src="assets/images/Trust area/anchor.png"
-                alt="Primera imgane"
-              />
-              <h2>CONTROL EMPRESARIAL COMPLETO</h2>
+              <img src="assets/mision.png" alt="Misión" />
+              <h2>MISIÓN</h2>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Architecto ea nihil nobis placeat.
+                Nuestra misión es proporcionar soluciones inmobiliarias
+                innovadoras y accesibles, garantizando la satisfacción y
+                confianza de nuestros clientes en cada transacción.
               </p>
             </div>
+            <!-- Visión -->
             <div class="card__trust box__card-primary">
-              <img
-                src="assets/images/Trust area/user.png"
-                alt="Primera imgane"
-              />
-              <h2>INFORMES Y ANÁLISIS CRÍTICOS</h2>
+              <img src="assets/vision.png" alt="Visión" />
+              <h2>VISIÓN</h2>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Architecto ea nihil nobis placeat.
+                Ser líderes en el sector inmobiliario, reconocidos por nuestra
+                transparencia, compromiso y calidad en el servicio,
+                contribuyendo al desarrollo de comunidades sostenibles.
               </p>
             </div>
+            <!-- Valores -->
             <div class="card__trust box__card-primary">
-              <img
-                src="assets/images/Trust area/user.png"
-                alt="Primera imgane"
-              />
-              <h2>SATISFACCIÓN DEL USUARIO GARANTIZADA</h2>
+              <img src="assets/valores.png" alt="Valores" />
+              <h2>VALORES</h2>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Architecto ea nihil nobis placeat.
+                Nos regimos por la honestidad, responsabilidad y compromiso con
+                nuestros clientes, priorizando siempre la excelencia y la
+                confianza en cada proceso inmobiliario.
               </p>
             </div>
           </div>
@@ -126,18 +119,32 @@
       <div class="container__about div__offset">
         <div class="about">
           <div class="text_about">
-            <h1>El equipo creativo más innovador</h1>
+            <h1>Especialistas en Alquiler de Propiedades</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-              dicta blanditiis itaque temporibus quidem nobis natus ratione.
-              Vitae quo odio ad earum asperiores, dolor, consequatur vero
-              voluptates at quasi repellat.
+              En <strong>Inmobiliaria Torres Guerrero</strong>, nos enfocamos en
+              brindarte las mejores opciones de
+              <strong>alquiler de propiedades</strong>, ya sea para vivienda,
+              comercio u oficinas. Nuestro equipo está comprometido en encontrar
+              el espacio perfecto que se adapte a tus necesidades y presupuesto.
             </p>
-            <a href="#" class="btn__text-about btn__text">Saber más</a>
+            <p>
+              Además, ofrecemos servicios de
+              <strong>compra y venta de inmuebles</strong>, asegurando procesos
+              ágiles, seguros y transparentes. Nos caracterizamos por nuestra
+              experiencia, atención personalizada y el compromiso de hacer
+              realidad tus proyectos inmobiliarios.
+            </p>
+            <p>¡Déjanos ayudarte a encontrar el lugar ideal para ti!</p>
           </div>
           <div class="image__about">
-            <img src="assets/images/About/about-1.png" alt="AboutImage" />
-            <img src="assets/images/About/about-2.png" alt="" />
+            <div class="profile">
+              <img src="assets/dannaEjemplo.jpeg" alt="Dana Torres" />
+              <p class="name">Danna Torres</p>
+            </div>
+            <div class="profile">
+              <img src="assets/JhonEjemplo.jpg" alt="Jhon Torres" />
+              <p class="name">Jhon Torres</p>
+            </div>
           </div>
         </div>
       </div>
@@ -145,78 +152,176 @@
       <!-- Servicios -->
       <div class="container__service container__card div__offset">
         <div class="service card__primary">
-          <div class="text__service text">
-            <p>¿QUÉ HACEMOS?</p>
-            <h1>Servicio para resolver todo tipo de problemas empresariales</h1>
+          <div class="text__service text__card-primary" id="servicios">
+            <p>¿QUÉ OFRECEMOS?</p>
+            <h1>Soluciones inmobiliarias para cada necesidad</h1>
           </div>
+
           <div class="container__card-service container__box-cardPrimary">
             <div class="box__card-primary card__service">
-              <img src="assets/images/Services/grid.png" alt="" />
-              <h2>Control empresarial completo</h2>
+              <img
+                src="assets/inmueblesArriendo.png"
+                alt="Alquiler de Propiedades"
+              />
+              <h2>Alquiler de Propiedades</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam reiciendis temporibus accusamus.
+                Encuentra el inmueble ideal para vivir o trabajar con contratos
+                claros y seguros.
               </p>
               <a href="#">
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
+
             <div class="box__card-primary card__service">
-              <img src="assets/images/Services/cart.png" alt="" />
-              <h2>Control empresarial completo</h2>
+              <img src="assets/inmueblesCompra.png" alt="Compra de Inmuebles" />
+              <h2>Compra de Inmuebles</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam reiciendis temporibus accusamus.
+                Te guiamos en la adquisición de tu propiedad, garantizando
+                seguridad y confianza.
               </p>
               <a href="#">
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
+
             <div class="box__card-primary card__service">
-              <img src="assets/images/Services/camera.png" alt="" />
-              <h2>Control empresarial completo</h2>
+              <img src="assets/ventaInmueble.png" alt="Venta de Propiedades" />
+              <h2>Venta de Propiedades</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam reiciendis temporibus accusamus.
+                Promocionamos y vendemos tu propiedad de manera efectiva y
+                rápida.
               </p>
               <a href="#">
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
+
             <div class="box__card-primary card__service">
-              <img src="assets/images/Services/headphone.png" alt="" />
-              <h2>Control empresarial completo</h2>
+              <img src="assets/avaluos.png" alt="Avalúos" />
+              <h2>Avalúos Profesionales</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam reiciendis temporibus accusamus.
+                Determinamos el valor real de tu propiedad con análisis precisos
+                del mercado.
               </p>
               <a href="#">
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
+
             <div class="box__card-primary card__service">
-              <img src="assets/images/Services/location.png" alt="" />
-              <h2>Control empresarial completo</h2>
+              <img src="assets/asesoriaLegal.png" alt="Asesoría Legal" />
+              <h2>Asesoría Legal</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam reiciendis temporibus accusamus.
+                Brindamos orientación en contratos, trámites notariales y
+                asuntos legales inmobiliarios.
               </p>
               <a href="#">
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
+
             <div class="box__card-primary card__service">
-              <img src="assets/images/Services/file.png" alt="" />
-              <h2>Control empresarial completo</h2>
+              <img
+                src="assets/inversionesInmobiliarias.png"
+                alt="Inversiones Inmobiliarias"
+              />
+              <h2>Inversiones Inmobiliarias</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam reiciendis temporibus accusamus.
+                Te ayudamos a invertir inteligentemente en el sector
+                inmobiliario con asesoría experta.
               </p>
               <a href="#">
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
           </div>
+        </div>
+      </div>
+      <!-- Contacto -->
+      <div class="container__contact div__offset" id="contacto">
+        <div class="contact">
+          <div class="text__contact">
+            <h1>Contáctanos</h1>
+            <p>
+              Estamos aquí para ayudarte. Escríbenos y te responderemos lo antes
+              posible.
+            </p>
+          </div>
+
+          <div class="contact__content">
+            <!-- Información de Contacto -->
+            <div class="contact__info">
+              <h2>Nuestra Oficina</h2>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Cra. 12 #12a-51,
+                Socorro, Colombia, 683551
+              </p>
+              <p><i class="fa-solid fa-phone"></i> +57 321 9626072</p>
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                torresguerreroinmobiliaria@gmail.com
+              </p>
+
+              <!-- Redes Sociales -->
+              <div class="contact__socials">
+                <a
+                  href="https://www.facebook.com/Torresguerreroinmo?locale=es_LA"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/torresguerreroinmo/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://wa.link/6j4505"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Formulario de Contacto -->
+            <div class="contact__form">
+              <h2>Envíanos un Mensaje</h2>
+              <form action="procesar_formulario.php" method="POST">
+                <input
+                  type="text"
+                  name="nombre"
+                  placeholder="Tu Nombre"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Tu Correo Electrónico"
+                  required
+                />
+                <input type="tel" name="telefono" placeholder="Tu Teléfono" />
+                <textarea
+                  name="mensaje"
+                  placeholder="Escribe tu mensaje aquí..."
+                  required
+                ></textarea>
+                <button type="submit">Enviar Mensaje</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección de Mapa -->
+      <div class="container__map div__offset">
+        <h2>Ubicación de Inmobiliaria Torres Guerrero</h2>
+        <p>Visítanos en nuestra oficina principal.</p>
+
+        <div class="map__container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.416876918714!2d-73.26008949999999!3d6.4687586999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e69c34e802ad705%3A0xd398e1a70a4ac4b4!2sTorres%20Guerrero%20Inmobiliaria!5e0!3m2!1ses!2sco!4v1742534094747!5m2!1ses!2sco"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </main>
